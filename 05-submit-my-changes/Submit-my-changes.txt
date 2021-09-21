@@ -1,0 +1,52 @@
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/Git-GitHub/05-
+$ git clone https://github.com/garnedyna/tech4impact-students-bio.git
+Cloning into 'tech4impact-students-bio'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/Git-GitHub/05-
+$ cd  tech4impact-students-bio
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/Git-GitHub/05-/tech4impact-students-bio (master)
+$ git checkout -b garnedyna-aulia-rahma
+Switched to a new branch 'garnedyna-aulia-rahma'
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/Git-GitHub/05-/tech4impact-students-bio (garnedyna-aulia-rahma)
+$ touch garnedynaauliarahma.md
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/Git-GitHub/05-/tech4impact-students-bio (garnedyna-aulia-rahma)
+$ nano garnedynaauliarahma.md
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/Git-GitHub/05-/tech4impact-students-bio (garnedyna-aulia-rahma)
+$ git add .
+warning: LF will be replaced by CRLF in garnedynaauliarahma.md.
+The file will have its original line endings in your working directory
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/Git-GitHub/05-/tech4impact-students-bio (garnedyna-aulia-rahma)
+$ git commit -m "garnedynaauliarahma.md"
+[garnedyna-aulia-rahma 60cc14c] garnedynaauliarahma.md
+ 1 file changed, 3 insertions(+)
+ create mode 100644 garnedynaauliarahma.md
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/Git-GitHub/05-/tech4impact-students-bio (garnedyna-aulia-rahma)
+$ git push -u origin garnedyna-aulia-rahma
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 396 bytes | 396.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'garnedyna-aulia-rahma' on GitHub by visiting:
+remote:      https://github.com/garnedyna/tech4impact-students-bio/pull/new/garnedyna-aulia-rahma
+remote:
+To https://github.com/garnedyna/tech4impact-students-bio.git
+ * [new branch]      garnedyna-aulia-rahma -> garnedyna-aulia-rahma
+Branch 'garnedyna-aulia-rahma' set up to track remote branch 'garnedyna-aulia-rahma' from 'origin'.
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/Git-GitHub/05-/tech4impact-students-bio (garnedyna-aulia-rahma)
+$

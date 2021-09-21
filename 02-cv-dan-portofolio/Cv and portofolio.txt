@@ -1,0 +1,151 @@
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ touch README.md
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ nano README.md
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/garne/Videos/garnedyna-aulia-rahma/.git/
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ git commit -m "Inisialisasi Git Repository"
+[master (root-commit) 6e40bf7] Inisialisasi Git Repository
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ git branch "cv"
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ git checkout cv
+Switched to branch 'cv'
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ touch cv.txt
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ nano cv.txt
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ git commit -m "Inisialisasi CV"
+On branch cv
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cv.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ git add cv.txt .
+warning: LF will be replaced by CRLF in cv.txt.
+The file will have its original line endings in your working directory
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ git status
+On branch cv
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   cv.txt
+
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ git commit -m "Inisialisasi CV"
+[cv 6f7167d] Inisialisasi CV
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cv.txt
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ nano
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ nano cv.txt
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ git add .
+warning: LF will be replaced by CRLF in cv.txt.
+The file will have its original line endings in your working directory
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ git commit -m "Add perusahaan pertama"
+[cv 2240663] Add perusahaan pertama
+ 1 file changed, 3 insertions(+)
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ nano cv.txt
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ git add .
+warning: LF will be replaced by CRLF in cv.txt.
+The file will have its original line endings in your working directory
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ git commit -m "Perusahaan kedua"
+[cv 1f1f14c] Perusahaan kedua
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ nano cv.txt
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ git add .
+warning: LF will be replaced by CRLF in cv.txt.
+The file will have its original line endings in your working directory
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ git commit -m "adding perusahaan ketiga"
+[cv e490e0d] adding perusahaan ketiga
+ 1 file changed, 1 insertion(+)
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ git checkout
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (cv)
+$ git checkout master
+Switched to branch 'master'
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ nano README.md
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ git commit -m "update master pertama"
+[master 1daed4a] update master pertama
+ 1 file changed, 1 insertion(+)
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ git merge cv
+hint: Waiting for your editor to close the file...
+Merge made by the 'recursive' strategy.
+ cv.txt | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 cv.txt
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ git remote add origin https://github.com/garnedyna/git-portofolio-and-cv.git
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$ git push -u origin master
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (20/20), 1.89 KiB | 386.00 KiB/s, done.
+Total 20 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/garnedyna/git-portofolio-and-cv.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+garne@LAPTOP-LANJBGH3 MINGW64 ~/Videos/garnedyna-aulia-rahma (master)
+$
